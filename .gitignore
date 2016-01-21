@@ -1,7 +1,8 @@
 ipch/codility-d3d53d2f/codility-bba5bcd.ipch
 Codility.opensdf
-Codility/Debug/Codility.log
+Codility/Debug/
 Codility.sdf
+Debug/
+ipch/
 *.suo
-*.ipch
 *.cache

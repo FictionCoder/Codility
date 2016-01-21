@@ -1,19 +1,21 @@
 #include "stdafx.h"
+#include "LessonBinaryGap.h"
 
 using namespace System;
 using namespace System::Text;
 using namespace System::Collections::Generic;
 using namespace Microsoft::VisualStudio::TestTools::UnitTesting;
+using namespace Lessons;
 
 namespace UnitTest
 {
 	[TestClass]
-	public ref class UnitTest
+	public ref class Lessons
 	{
 	private:
 		TestContext^ testContextInstance;
 
-	public: 
+	public:
 		/// <summary>
 		///Gets or sets the test context which provides
 		///information about and functionality for the current test run.
@@ -30,7 +32,7 @@ namespace UnitTest
 			}
 		};
 
-		#pragma region Additional test attributes
+#pragma region Additional test attributes
 		//
 		//You can use the following additional attributes as you write your tests:
 		//
@@ -50,14 +52,16 @@ namespace UnitTest
 		//[TestCleanup()]
 		//void MyTestCleanup() {};
 		//
-		#pragma endregion 
+#pragma endregion 
 
 		[TestMethod]
-		void TestMethod1()
+		void BinaryGap()
 		{
-			//
-			// TODO: Add test logic here
-			//
+			//10000010001
+			Assert::AreEqual(solution_binary_gap(1041), 5);
+			//1100
+			Assert::AreEqual(solution_binary_gap(6), 0);
 		};
 	};
 }
+
